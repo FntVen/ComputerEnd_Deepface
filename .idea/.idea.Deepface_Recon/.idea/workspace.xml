@@ -8,13 +8,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2f70f98a-34c8-4564-a229-c434e60ff714" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Deepface_Recon.sln" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Deepface_Recon/Deepface_Recon.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Deepface_Recon/Deepface_Recon.csproj.user" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Deepface_Recon/Program.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Deepface_Recon/Welcome_Screen.Designer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Deepface_Recon/Welcome_Screen.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Deepface_Recon/API.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Deepface_Recon/Setup_Download.Designer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Deepface_Recon/Setup_Download.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Deepface_Recon/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Deepface_Recon/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Deepface_Recon/Assets/Images/AndroidShadow.png" beforeDir="false" afterPath="$PROJECT_DIR$/Deepface_Recon/Assets/Images/AndroidShadow.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Deepface_Recon/Assets/Images/CamShadow.png" beforeDir="false" afterPath="$PROJECT_DIR$/Deepface_Recon/Assets/Images/CamShadow.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Deepface_Recon/Deepface_Recon.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Deepface_Recon/Deepface_Recon.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Deepface_Recon/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Deepface_Recon/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Deepface_Recon/Welcome_Screen.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Deepface_Recon/Welcome_Screen.Designer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Deepface_Recon/Welcome_Screen.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Deepface_Recon/Welcome_Screen.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Deepface_Recon/Welcome_Screen.resx" beforeDir="false" afterPath="$PROJECT_DIR$/Deepface_Recon/Welcome_Screen.resx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,31 +31,49 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 2
-}]]></component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;FntVen&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/FntVen/ComputerEnd_Deepface.git&quot;,
+    &quot;accountId&quot;: &quot;2a6a89d9-0058-4d3b-aba2-59501d172b9a&quot;
+  }
+}</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Deepface_Recon/API.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Deepface_Recon/Setup_Download.Designer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Deepface_Recon/Setup_Download.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="34aZWxhHxGJ54KcUioBLPa9xHST" />
   <component name="ProjectViewState">
     <option name="autoscrollToSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    ".NET Project.Deepface_Recon.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;.NET Project.Deepface_Recon.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Deepface_Recon" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
@@ -84,16 +106,32 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1761453680119</updated>
-      <workItem from="1761453683840" duration="2254000" />
+      <workItem from="1761453683840" duration="5154000" />
+      <workItem from="1761477570614" duration="3016000" />
+      <workItem from="1761806449724" duration="1825000" />
+      <workItem from="1761808325377" duration="684000" />
+      <workItem from="1761809064059" duration="2527000" />
     </task>
+    <task id="LOCAL-00001" summary="First Commit">
+      <option name="closed" value="true" />
+      <created>1761456168846</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1761456168846</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="First Commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="First Commit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

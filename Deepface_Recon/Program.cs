@@ -1,3 +1,5 @@
+using System.Threading;
+
 namespace Deepface_Recon
 {
     static class Program
@@ -13,5 +15,44 @@ namespace Deepface_Recon
             ApplicationConfiguration.Initialize();
             Application.Run(new Welcome_Screen());
         }
+
+        public static void PageSwitch(int LoadKey)
+        {
+            switch (LoadKey)
+            {
+                case 1:
+                    var Thread1 = new Thread(LoadWelcome);
+                    Thread1.Start();
+                return;
+                
+                case 2:
+                    var Thread2 = new Thread(LoadMain);
+                    Thread2.Start();
+                return;
+                
+                case 3:
+                    var Thread3 = new Thread(LoadSetup);
+                    Thread3.Start();
+                    return;
+            }
+        }
+
+        private static void LoadWelcome()
+        {
+            Application.Exit(); 
+            Application.Run(new Welcome_Screen());
+        }
+
+        private static void LoadSetup()
+        {
+            Application.Run(new Setup_Download());
+        }
+
+        private static void LoadMain()
+        {
+            Application.Exit();
+            Application.Run();
+        }
+
     }
 }
