@@ -48,10 +48,10 @@ partial class Welcome_Screen
         NoDownload_Click.BackColor = System.Drawing.Color.Transparent;
         NoDownload_Click.BackgroundImage = ((System.Drawing.Image)resources.GetObject("NoDownload_Click.BackgroundImage"));
         NoDownload_Click.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-        NoDownload_Click.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+        NoDownload_Click.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
         NoDownload_Click.Font = new System.Drawing.Font("Bodoni MT Condensed", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)0));
         NoDownload_Click.ForeColor = System.Drawing.SystemColors.ControlLight;
-        NoDownload_Click.Location = new System.Drawing.Point(0, 336);
+        NoDownload_Click.Location = new System.Drawing.Point(-3, 336);
         NoDownload_Click.Margin = new System.Windows.Forms.Padding(0);
         NoDownload_Click.Name = "NoDownload_Click";
         NoDownload_Click.Size = new System.Drawing.Size(288, 44);
@@ -62,17 +62,17 @@ partial class Welcome_Screen
         // 
         // Download_Click
         // 
-        Download_Click.Anchor = ((System.Windows.Forms.AnchorStyles)(System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right));
+        Download_Click.Anchor = ((System.Windows.Forms.AnchorStyles)(System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right));
         Download_Click.BackColor = System.Drawing.Color.Transparent;
         Download_Click.BackgroundImage = ((System.Drawing.Image)resources.GetObject("Download_Click.BackgroundImage"));
         Download_Click.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-        Download_Click.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+        Download_Click.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
         Download_Click.Font = new System.Drawing.Font("Bodoni MT Condensed", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)0));
         Download_Click.ForeColor = System.Drawing.SystemColors.ControlLight;
-        Download_Click.Location = new System.Drawing.Point(466, 196);
+        Download_Click.Location = new System.Drawing.Point(486, 336);
         Download_Click.Margin = new System.Windows.Forms.Padding(0);
         Download_Click.Name = "Download_Click";
-        Download_Click.Size = new System.Drawing.Size(333, 44);
+        Download_Click.Size = new System.Drawing.Size(315, 44);
         Download_Click.TabIndex = 1;
         Download_Click.Text = "Baixar o Necessário";
         Download_Click.UseVisualStyleBackColor = false;
@@ -93,10 +93,10 @@ partial class Welcome_Screen
         // 
         // label2
         // 
-        label2.Anchor = ((System.Windows.Forms.AnchorStyles)(System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right));
+        label2.Anchor = ((System.Windows.Forms.AnchorStyles)(System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right));
         label2.Font = new System.Drawing.Font("Bodoni MT Condensed", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)0));
         label2.ForeColor = System.Drawing.Color.FromArgb(((int)((byte)55)), ((int)((byte)55)), ((int)((byte)55)));
-        label2.Location = new System.Drawing.Point(466, 12);
+        label2.Location = new System.Drawing.Point(486, 161);
         label2.Name = "label2";
         label2.Size = new System.Drawing.Size(321, 157);
         label2.TabIndex = 3;
@@ -108,7 +108,7 @@ partial class Welcome_Screen
         pictureBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
         pictureBox3.BackColor = System.Drawing.Color.Transparent;
         pictureBox3.Image = ((System.Drawing.Image)resources.GetObject("pictureBox3.Image"));
-        pictureBox3.Location = new System.Drawing.Point(225, 37);
+        pictureBox3.Location = new System.Drawing.Point(251, 52);
         pictureBox3.Name = "pictureBox3";
         pictureBox3.Size = new System.Drawing.Size(272, 275);
         pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -117,9 +117,9 @@ partial class Welcome_Screen
         // 
         // pictureBox2
         // 
-        pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right));
+        pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right));
         pictureBox2.Image = ((System.Drawing.Image)resources.GetObject("pictureBox2.Image"));
-        pictureBox2.Location = new System.Drawing.Point(238, 175);
+        pictureBox2.Location = new System.Drawing.Point(267, -247);
         pictureBox2.Name = "pictureBox2";
         pictureBox2.Size = new System.Drawing.Size(752, 485);
         pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -130,7 +130,7 @@ partial class Welcome_Screen
         // pictureBox1
         // 
         pictureBox1.Image = ((System.Drawing.Image)resources.GetObject("pictureBox1.Image"));
-        pictureBox1.Location = new System.Drawing.Point(-211, -44);
+        pictureBox1.Location = new System.Drawing.Point(-211, -77);
         pictureBox1.Name = "pictureBox1";
         pictureBox1.Size = new System.Drawing.Size(619, 362);
         pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;

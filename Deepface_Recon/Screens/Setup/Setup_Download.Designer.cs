@@ -44,13 +44,15 @@ partial class Setup_Download
         // 
         // Procede_Click
         // 
-        Procede_Click.BackColor = System.Drawing.Color.FromArgb(((int)((byte)10)), ((int)((byte)29)), ((int)((byte)44)));
+        Procede_Click.BackColor = System.Drawing.Color.Transparent;
+        Procede_Click.BackgroundImage = ((System.Drawing.Image)resources.GetObject("Procede_Click.BackgroundImage"));
+        Procede_Click.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
         Procede_Click.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
         Procede_Click.Font = new System.Drawing.Font("Bodoni MT Condensed", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)0));
         Procede_Click.ForeColor = System.Drawing.SystemColors.ControlLight;
-        Procede_Click.Location = new System.Drawing.Point(587, 293);
+        Procede_Click.Location = new System.Drawing.Point(453, 285);
         Procede_Click.Name = "Procede_Click";
-        Procede_Click.Size = new System.Drawing.Size(148, 38);
+        Procede_Click.Size = new System.Drawing.Size(273, 46);
         Procede_Click.TabIndex = 0;
         Procede_Click.Text = "Entendido";
         Procede_Click.UseVisualStyleBackColor = false;
@@ -58,13 +60,15 @@ partial class Setup_Download
         // 
         // GoBack_Click
         // 
-        GoBack_Click.BackColor = System.Drawing.Color.FromArgb(((int)((byte)10)), ((int)((byte)29)), ((int)((byte)44)));
+        GoBack_Click.BackColor = System.Drawing.Color.Transparent;
+        GoBack_Click.BackgroundImage = ((System.Drawing.Image)resources.GetObject("GoBack_Click.BackgroundImage"));
+        GoBack_Click.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
         GoBack_Click.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
         GoBack_Click.Font = new System.Drawing.Font("Bodoni MT Condensed", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)0));
         GoBack_Click.ForeColor = System.Drawing.SystemColors.ControlLight;
-        GoBack_Click.Location = new System.Drawing.Point(12, 293);
+        GoBack_Click.Location = new System.Drawing.Point(12, 285);
         GoBack_Click.Name = "GoBack_Click";
-        GoBack_Click.Size = new System.Drawing.Size(148, 38);
+        GoBack_Click.Size = new System.Drawing.Size(273, 46);
         GoBack_Click.TabIndex = 1;
         GoBack_Click.Text = "Cancelar";
         GoBack_Click.UseVisualStyleBackColor = false;
@@ -73,45 +77,41 @@ partial class Setup_Download
         // pictureBox1
         // 
         pictureBox1.Image = ((System.Drawing.Image)resources.GetObject("pictureBox1.Image"));
-        pictureBox1.Location = new System.Drawing.Point(12, 86);
+        pictureBox1.Location = new System.Drawing.Point(12, 88);
         pictureBox1.Name = "pictureBox1";
-        pictureBox1.Size = new System.Drawing.Size(348, 186);
-        pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+        pictureBox1.Size = new System.Drawing.Size(320, 182);
+        pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
         pictureBox1.TabIndex = 2;
         pictureBox1.TabStop = false;
         // 
         // pictureBox2
         // 
         pictureBox2.Image = ((System.Drawing.Image)resources.GetObject("pictureBox2.Image"));
-        pictureBox2.Location = new System.Drawing.Point(391, 86);
+        pictureBox2.Location = new System.Drawing.Point(415, 88);
         pictureBox2.Name = "pictureBox2";
-        pictureBox2.Size = new System.Drawing.Size(344, 186);
-        pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+        pictureBox2.Size = new System.Drawing.Size(320, 182);
         pictureBox2.TabIndex = 3;
         pictureBox2.TabStop = false;
         // 
         // label1
         // 
-        label1.Font = new System.Drawing.Font("Bodoni MT Condensed", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)0));
-        label1.ForeColor = System.Drawing.Color.FromArgb(((int)((byte)55)), ((int)((byte)55)), ((int)((byte)55)));
-        label1.Location = new System.Drawing.Point(198, -4);
+        label1.Font = new System.Drawing.Font("Bodoni MT Condensed", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)0));
+        label1.Location = new System.Drawing.Point(102, -4);
         label1.Name = "label1";
-        label1.Size = new System.Drawing.Size(345, 36);
+        label1.Size = new System.Drawing.Size(548, 41);
         label1.TabIndex = 4;
-        label1.Text = "Aviso: Não Feche Essas Telas";
+        label1.Text = "Aviso!";
         label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
         // 
         // label2
         // 
-        label2.Font = new System.Drawing.Font("Bodoni MT Condensed", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)0));
-        label2.ForeColor = System.Drawing.Color.FromArgb(((int)((byte)55)), ((int)((byte)55)), ((int)((byte)55)));
-        label2.Location = new System.Drawing.Point(12, 28);
+        label2.Font = new System.Drawing.Font("Bodoni MT Condensed", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)0));
+        label2.Location = new System.Drawing.Point(37, 31);
         label2.Name = "label2";
-        label2.Size = new System.Drawing.Size(722, 55);
+        label2.Size = new System.Drawing.Size(697, 54);
         label2.TabIndex = 5;
-        label2.Text = ("Durante o download de recursos essenciais ambas telas demonstradas abaixo vão apa" + "recer. Prompt de Comando e Python Installer.\r\nNão as feche!");
+        label2.Text = "Durante o download das dependencias essas duas telas serão abertas\r\nNão as feche!";
         label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-        label2.Click += label2_Click;
         // 
         // Setup_Download
         // 
@@ -126,10 +126,10 @@ partial class Setup_Download
         Controls.Add(GoBack_Click);
         Controls.Add(Procede_Click);
         Icon = ((System.Drawing.Icon)resources.GetObject("$this.Icon"));
+        Location = new System.Drawing.Point(15, 15);
         MaximizeBox = false;
         MinimizeBox = false;
         StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-        Text = "Setup_Download";
         ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
         ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
         ResumeLayout(false);
@@ -137,13 +137,11 @@ partial class Setup_Download
 
     private System.Windows.Forms.Label label2;
 
-    private System.Windows.Forms.Label label1;
-
-    private System.Windows.Forms.PictureBox pictureBox1;
-    private System.Windows.Forms.PictureBox pictureBox2;
-
     private System.Windows.Forms.Button Procede_Click;
     private System.Windows.Forms.Button GoBack_Click;
+    private System.Windows.Forms.PictureBox pictureBox1;
+    private System.Windows.Forms.PictureBox pictureBox2;
+    private System.Windows.Forms.Label label1;
 
     #endregion
 }

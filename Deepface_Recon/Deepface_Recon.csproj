@@ -13,7 +13,13 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Compile Update="Setup_Download.cs">
+	  <Compile Update="Screens\Setup\Setup_Download.cs">
+	    <SubType>Form</SubType>
+	  </Compile>
+	  <Compile Update="Screens\Setup\AskUser.cs">
+	    <SubType>Form</SubType>
+	  </Compile>
+	  <Compile Update="MainMenu.cs">
 	    <SubType>Form</SubType>
 	  </Compile>
 	</ItemGroup>

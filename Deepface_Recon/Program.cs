@@ -34,6 +34,11 @@ namespace Deepface_Recon
                     var Thread3 = new Thread(LoadSetup);
                     Thread3.Start();
                     return;
+                case 4:
+                    Application.ExitThread();
+                    var Thread4 = new Thread(LoadAskUser);
+                    Thread4.Start();
+                    return;
             }
         }
 
@@ -46,6 +51,11 @@ namespace Deepface_Recon
         private static void LoadSetup()
         {
             Application.Run(new Setup_Download());
+        }
+
+        private static void LoadAskUser()
+        {
+            Application.Run(new AskUser());
         }
 
         private static void LoadMain()
