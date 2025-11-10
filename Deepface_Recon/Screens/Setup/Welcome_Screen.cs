@@ -19,7 +19,7 @@ namespace Deepface_Recon
 
         private void NoDownload_Click_Click(object sender, EventArgs e)
         {
-            
+            Program.PageSwitch(2);
         }
 
         private void Download_Click_Click(object sender, EventArgs e)
