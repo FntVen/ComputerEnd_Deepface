@@ -10,7 +10,7 @@ namespace Deepface_Recon
 {
     static class Program
     {
-        
+        public static int Apiflag = 0;
         public static int Wlcmflag = 0;
         [STAThread]
         public static void Main(string[] args)
@@ -105,8 +105,12 @@ namespace Deepface_Recon
             {
                 endpoints.MapControllers();
             });
-
+            if (Apiflag == 0)
+            {
+                Apiflag = 1;
                 app.Run();
+            }
+
 
         }
 

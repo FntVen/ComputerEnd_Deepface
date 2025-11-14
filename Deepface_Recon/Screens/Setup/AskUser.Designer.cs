@@ -48,6 +48,7 @@ partial class AskUser
         UserOptions_CB.Name = "UserOptions_CB";
         UserOptions_CB.Size = new System.Drawing.Size(719, 23);
         UserOptions_CB.TabIndex = 0;
+        UserOptions_CB.SelectedIndexChanged += UserOptions_CB_SelectedIndexChanged_1;
         // 
         // pictureBox1
         // 
@@ -67,7 +68,7 @@ partial class AskUser
         label1.Name = "label1";
         label1.Size = new System.Drawing.Size(725, 54);
         label1.TabIndex = 2;
-        label1.Text = "Em qual usuario as dependencias devem ser instaladas?";
+        label1.Text = "Qual usuario está instalando Água-Eye?";
         label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
         // 
         // label2
@@ -111,6 +112,7 @@ partial class AskUser
         Proceed_Click.TabIndex = 5;
         Proceed_Click.Text = "Confirmar";
         Proceed_Click.UseVisualStyleBackColor = false;
+        Proceed_Click.Click += Proceed_Click_Click;
         // 
         // AskUser
         // 

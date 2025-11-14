@@ -8,17 +8,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2f70f98a-34c8-4564-a229-c434e60ff714" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Deepface_Recon/ApiBase/Controller/MainController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Deepface_Recon/ApiBase/Functions/CsvAppending.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Deepface_Recon/ApiBase/Functions/ImageCreation.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Deepface_Recon/ApiBase/Model/ImgInModel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Deepface_Recon/ApiBase/Model/ImgInModelStatic.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Deepface_Recon/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Deepface_Recon/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Deepface_Recon/API.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Deepface_Recon/ApiBase/Controller/MainController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Deepface_Recon/ApiBase/Controller/MainController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Deepface_Recon/ApiBase/Functions/CsvAppending.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Deepface_Recon/ApiBase/Functions/CsvAppending.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Deepface_Recon/ApiBase/Functions/ImageCreation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Deepface_Recon/ApiBase/Functions/ImageCreation.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Deepface_Recon/ApiBase/Model/ImgInModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Deepface_Recon/ApiBase/Model/ImgInModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Deepface_Recon/ApiBase/Model/ImgInModelStatic.cs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Deepface_Recon/Deepface_Recon.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Deepface_Recon/Deepface_Recon.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Deepface_Recon/MainMenu.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Deepface_Recon/MainMenu.Designer.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Deepface_Recon/MainMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Deepface_Recon/MainMenu.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Deepface_Recon/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Deepface_Recon/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Deepface_Recon/Screens/Setup/Welcome_Screen.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Deepface_Recon/Screens/Setup/Welcome_Screen.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Deepface_Recon/Screens/Setup/AskUser.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Deepface_Recon/Screens/Setup/AskUser.Designer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Deepface_Recon/Screens/Setup/AskUser.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Deepface_Recon/Screens/Setup/AskUser.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +49,6 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5b7eee3d1b3a4cd3a7acbe7e0e97a05dcef928/42/318cb298/ButtonBase.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5b7eee3d1b3a4cd3a7acbe7e0e97a05dcef928/fe/d50fdc2f/Control.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/7be4c5142ec3e67485d8a889e35f8b51f608dd4d2fb94cbd9688b37f764e5f7/Button.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Deepface_Recon/API.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Deepface_Recon/ApiBase/Controller/MainController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Deepface_Recon/ApiBase/Functions/CsvAppending.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Deepface_Recon/ApiBase/Functions/ImageCreation.cs" root0="FORCE_HIGHLIGHTING" />
@@ -71,23 +71,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    ".NET Project.Deepface_Recon.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;.NET Project.Deepface_Recon.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Deepface_Recon" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
@@ -146,7 +146,11 @@
       <workItem from="1762729736874" duration="351000" />
       <workItem from="1762730684805" duration="246000" />
       <workItem from="1762731071235" duration="885000" />
-      <workItem from="1762732271046" duration="21345000" />
+      <workItem from="1762732271046" duration="51433000" />
+      <workItem from="1763016954825" duration="2673000" />
+      <workItem from="1763069576678" duration="1297000" />
+      <workItem from="1763074469264" duration="11438000" />
+      <workItem from="1763133391802" duration="8116000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit">
       <option name="closed" value="true" />
@@ -172,7 +176,15 @@
       <option name="project" value="LOCAL" />
       <updated>1762075300560</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Importing all necessary data, Semi-finished HomeScreen.">
+      <option name="closed" value="true" />
+      <created>1762767446840</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1762767446840</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -185,7 +197,8 @@
     <MESSAGE value="First Commit" />
     <MESSAGE value="Design changes and setup screen implementation" />
     <MESSAGE value="Ask which user python should be installed" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ask which user python should be installed" />
+    <MESSAGE value="Importing all necessary data, Semi-finished HomeScreen." />
+    <option name="LAST_COMMIT_MESSAGE" value="Importing all necessary data, Semi-finished HomeScreen." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -24,15 +24,11 @@ using Deepface_Recon.ApiBase.Functions;
         {
             
             var PrintImage = new ImageCreation();
-            PrintImage.Img64(model.thing, model.Session);
+            PrintImage.Img64(model.thing, model.Session, model.TimeFrame);
 
-            var changename = new MainMenu();
-            changename.ChangeName(ImgInModelStatic.Device);
-            
-            ImgInModelStatic.Device = model.Device;
-            ImgInModelStatic.thing = model.thing;
-            ImgInModelStatic.Session = model.Session;
-            ImgInModelStatic.TimeFrame = model.TimeFrame;
+            var PassArgs = new CsvAppending();
+            PassArgs.CsvArgWork(model.Session);
+           
             
             return StatusCode(201);
         }
