@@ -3,6 +3,7 @@ using System.Text;
 using System.IO.Compression;
 using System.Threading;
 using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore.Diagnostics;
 
 namespace Deepface_Recon
 {
@@ -13,7 +14,9 @@ namespace Deepface_Recon
 
         public AskUser()
         {
+            
             InitializeComponent();
+            LoadingIcon.Visible = false;
 
             string[] AvaliableOptions;
             string UserPath = "C:\\Users";
@@ -42,7 +45,7 @@ namespace Deepface_Recon
         }
         
 
-        private static void PyInstaller(string user)
+        private void PyInstaller(string user)
         {
             string path = AppDomain.CurrentDomain.BaseDirectory;
             string[] segpath = path.Split("\\");
@@ -63,10 +66,11 @@ namespace Deepface_Recon
                 UseShellExecute = true,
                 CreateNoWindow = true
             };
+            VisibilityToggle(1);
             Process.Start(RunPy);
             //Console.WriteLine("After RunPy");
             //Console.WriteLine("");
-
+            
             Task.Run(() =>
             {
                 Thread.Sleep(10000);
@@ -83,21 +87,49 @@ namespace Deepface_Recon
                     {
                         //Console.WriteLine("In if");
                         //Console.WriteLine("");
+                        
                         Directory.Delete("C:\\Program Files\\Python312\\Scripts", true);
                         Directory.Delete("C:\\Program Files\\Python312\\Lib\\site-packages", true);
                         ZipFile.ExtractToDirectory(Final + "\\Resources\\Lib\\PythonCompressed.zip",  Final + "\\Resources\\Lib");
                         //Console.WriteLine("After Extract");
                         Directory.Move(Final + "\\Resources\\Lib\\site-packages", "C:\\Program Files\\Python312\\Lib\\site-packages");
                         Directory.Move(Final + "\\Resources\\Lib\\Scripts","C:\\Program Files\\Python312\\Scripts");
+                        VisibilityToggle(0);
                         break;
                     }
                 }
+                
             });
             
-            
 
             
+            
 
+        }
+
+        private void VisibilityToggle(int Visibility)
+        {
+            if (Visibility == 1)
+            {
+                Proceed_Click.Visible =  false;
+                GoBack_Click.Visible = false;
+                label1.Visible = false;
+                label2.Visible = false;
+                UserOptions_CB.Visible = false;
+                pictureBox1.Visible = false;
+                LoadingIcon.Visible = true;
+            }
+            else
+            {
+                LoadingIcon.Visible = false;
+                Proceed_Click.Visible = true;
+                GoBack_Click.Visible = true;
+                label1.Visible = true;
+                label2.Visible = true;
+                UserOptions_CB.Visible = true;
+                pictureBox1.Visible = true;
+
+            }
         }
 
         private void AskUser_Load(object sender, EventArgs e)
@@ -123,11 +155,16 @@ namespace Deepface_Recon
             {
                 PyInstaller(User.ToString());   
             }
-
+            
             
         }
 
         private void UserOptions_CB_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void LoadingIcon_Click(object sender, EventArgs e)
         {
             
         }

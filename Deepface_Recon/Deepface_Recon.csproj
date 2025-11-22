@@ -19,7 +19,10 @@
 	  <Compile Update="Screens\Setup\AskUser.cs">
 	    <SubType>Form</SubType>
 	  </Compile>
-	  <Compile Update="MainMenu.cs">
+	  <Compile Update="Screens\Work\MainMenu.cs">
+	    <SubType>Form</SubType>
+	  </Compile>
+	  <Compile Update="Screens\Work\Work_Update.cs">
 	    <SubType>Form</SubType>
 	  </Compile>
 	</ItemGroup>

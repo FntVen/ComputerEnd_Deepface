@@ -38,7 +38,9 @@ partial class AskUser
         label2 = new System.Windows.Forms.Label();
         GoBack_Click = new System.Windows.Forms.Button();
         Proceed_Click = new System.Windows.Forms.Button();
+        LoadingIcon = new System.Windows.Forms.PictureBox();
         ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+        ((System.ComponentModel.ISupportInitialize)LoadingIcon).BeginInit();
         SuspendLayout();
         // 
         // UserOptions_CB
@@ -64,7 +66,7 @@ partial class AskUser
         // 
         label1.Font = new System.Drawing.Font("Bodoni MT Condensed", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)0));
         label1.ForeColor = System.Drawing.Color.FromArgb(((int)((byte)55)), ((int)((byte)55)), ((int)((byte)55)));
-        label1.Location = new System.Drawing.Point(10, 0);
+        label1.Location = new System.Drawing.Point(8, -9);
         label1.Name = "label1";
         label1.Size = new System.Drawing.Size(725, 54);
         label1.TabIndex = 2;
@@ -114,12 +116,24 @@ partial class AskUser
         Proceed_Click.UseVisualStyleBackColor = false;
         Proceed_Click.Click += Proceed_Click_Click;
         // 
+        // LoadingIcon
+        // 
+        LoadingIcon.Image = ((System.Drawing.Image)resources.GetObject("LoadingIcon.Image"));
+        LoadingIcon.Location = new System.Drawing.Point(118, 16);
+        LoadingIcon.Name = "LoadingIcon";
+        LoadingIcon.Size = new System.Drawing.Size(512, 313);
+        LoadingIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+        LoadingIcon.TabIndex = 6;
+        LoadingIcon.TabStop = false;
+        LoadingIcon.Click += LoadingIcon_Click;
+        // 
         // AskUser
         // 
         AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
         AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
         BackColor = System.Drawing.Color.FromArgb(((int)((byte)248)), ((int)((byte)245)), ((int)((byte)240)));
         ClientSize = new System.Drawing.Size(732, 340);
+        Controls.Add(LoadingIcon);
         Controls.Add(UserOptions_CB);
         Controls.Add(Proceed_Click);
         Controls.Add(GoBack_Click);
@@ -132,8 +146,11 @@ partial class AskUser
         StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
         Load += AskUser_Load;
         ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+        ((System.ComponentModel.ISupportInitialize)LoadingIcon).EndInit();
         ResumeLayout(false);
     }
+
+    private System.Windows.Forms.PictureBox LoadingIcon;
 
     private System.Windows.Forms.Button GoBack_Click;
     private System.Windows.Forms.Button Proceed_Click;

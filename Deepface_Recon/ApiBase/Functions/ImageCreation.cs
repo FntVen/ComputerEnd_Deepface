@@ -27,7 +27,7 @@ public class ImageCreation
 
         var CorrectedTime = TimeFrame;
         int flag = 0;
-        string extension = "Seconds";
+        string extension = "Segundos";
         
         string Time = DateTime.Now.Hour.ToString() + "." + DateTime.Now.Minute.ToString() + "." + DateTime.Now.Second.ToString() + "." + DateTime.Now.Millisecond.ToString();
         if (TimeFrame >= 60)
@@ -44,10 +44,10 @@ public class ImageCreation
         switch (flag)
         {
             case 1:
-                extension = "Minutes";
+                extension = "Minutos";
                 break;
             case 2:
-                extension = "Hours";
+                extension = "Horas";
                 break;
         }
         

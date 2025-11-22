@@ -68,6 +68,7 @@ public partial class MainMenu : Form
             ButtonToggle = 1;
             File.WriteAllText(ArgPath + "\\CSVArgument.csv", "Argument,Mode,Sync\n");
             Iniciar.BackColor = Color.Green;
+            Iniciar.Text = "Rodando";
             if (ApiFlag == 0)
             {
                 Program.PageSwitch(5);
