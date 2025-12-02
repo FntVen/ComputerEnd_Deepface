@@ -22,7 +22,19 @@
 	  <Compile Update="Screens\Work\MainMenu.cs">
 	    <SubType>Form</SubType>
 	  </Compile>
-	  <Compile Update="Screens\Work\Work_Update.cs">
+	  <Compile Update="Screens\Work\Rela_Look.cs">
+	    <SubType>Form</SubType>
+	  </Compile>
+	  <Compile Update="Screens\Work\Rela_Create.cs">
+	    <SubType>Form</SubType>
+	  </Compile>
+	  <Compile Update="Screens\Work\Database_Work.cs">
+	    <SubType>Form</SubType>
+	  </Compile>
+	  <Compile Update="Screens\Work\SubMenus\DirCreate.cs">
+	    <SubType>Form</SubType>
+	  </Compile>
+	  <Compile Update="Screens\Work\SubMenus\SelectImage.cs">
 	    <SubType>Form</SubType>
 	  </Compile>
 	</ItemGroup>

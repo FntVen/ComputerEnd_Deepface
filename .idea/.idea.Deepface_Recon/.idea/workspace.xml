@@ -8,16 +8,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2f70f98a-34c8-4564-a229-c434e60ff714" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Deepface_Recon/Screens/Work/MainMenu.resx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Deepface_Recon/Screens/Work/Work_Update.Designer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Deepface_Recon/Screens/Work/Work_Update.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Deepface_Recon/General_Fuctions/ConsoleWork.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Deepface_Recon/Screens/Work/Database_Work.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Deepface_Recon/Screens/Work/Rela_Create.Designer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Deepface_Recon/Screens/Work/Rela_Look.Designer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Deepface_Recon/Screens/Work/Rela_Look.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Deepface_Recon/Screens/Work/SubMenus/DirCreate.Designer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Deepface_Recon/Screens/Work/SubMenus/DirCreate.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Deepface_Recon/Screens/Work/SubMenus/SelectImage.Designer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Deepface_Recon/Screens/Work/SubMenus/SelectImage.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Deepface_Recon/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Deepface_Recon/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Deepface_Recon/ApiBase/Functions/ImageCreation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Deepface_Recon/ApiBase/Functions/ImageCreation.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Deepface_Recon/ApiBase/Controller/MainController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Deepface_Recon/ApiBase/Controller/MainController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Deepface_Recon/ApiBase/Functions/CsvAppending.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Deepface_Recon/ApiBase/Functions/CsvAppending.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Deepface_Recon/Deepface_Recon.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Deepface_Recon/Deepface_Recon.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Deepface_Recon/MainMenu.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Deepface_Recon/Screens/Work/MainMenu.Designer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Deepface_Recon/MainMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Deepface_Recon/Screens/Work/MainMenu.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Deepface_Recon/Screens/Setup/AskUser.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Deepface_Recon/Screens/Setup/AskUser.Designer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Deepface_Recon/Screens/Setup/AskUser.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Deepface_Recon/Screens/Setup/AskUser.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Deepface_Recon/Screens/Work/MainMenu.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Deepface_Recon/Screens/Work/MainMenu.Designer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Deepface_Recon/Screens/Work/MainMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Deepface_Recon/Screens/Work/MainMenu.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Deepface_Recon/Screens/Work/Work_Update.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Deepface_Recon/Screens/Work/Database_Work.Designer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Deepface_Recon/Screens/Work/Work_Update.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Deepface_Recon/Screens/Work/Rela_Create.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,18 +50,30 @@
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="mock:///Immediate Window" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5b7eee3d1b3a4cd3a7acbe7e0e97a05dcef928/42/318cb298/ButtonBase.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5b7eee3d1b3a4cd3a7acbe7e0e97a05dcef928/fe/d50fdc2f/Control.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/19e4627beca845505883bd6b0333350f5e53f2a71d7c181f156e6a5c54ea5d/TreeView.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/261ea83c988816e3d8fe76b15b7ac6c10af64b8f9e739854f83c137c8ba9/SafeFileHandle.Windows.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/422299c1e1233f1a20b8c0654281f74792424fe87e29abaf4ecfcd0cd64d718/FileSystemEnumerator.Windows.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/4c2266d9aba4c4ba36aec62278534ed6bbd881431c65810dd69b8d57bbf/Path.Windows.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/7be4c5142ec3e67485d8a889e35f8b51f608dd4d2fb94cbd9688b37f764e5f7/Button.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/a96e3d352c820588c15ddd8373c2183278ff879be09fe7c028e3bb3aabe13/Control.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/de7e5d9f3eff8e93316bbae6f9743ff9f72884862e5d612aaaba84bf9aa3a8/NativeWindow.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Deepface_Recon/ApiBase/Controller/MainController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Deepface_Recon/ApiBase/Functions/CsvAppending.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Deepface_Recon/ApiBase/Functions/ImageCreation.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Deepface_Recon/ApiBase/Model/ImgInModel.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Deepface_Recon/MainMenu.Designer.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Deepface_Recon/MainMenu.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Deepface_Recon/General_Fuctions/ConsoleWork.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Deepface_Recon/Screens/Setup/AskUser.Designer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Deepface_Recon/Screens/Setup/AskUser.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Deepface_Recon/Screens/Work/Database_Work.Designer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Deepface_Recon/Screens/Work/Database_Work.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Deepface_Recon/Screens/Work/Rela_Create.Designer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Deepface_Recon/Screens/Work/Rela_Create.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Deepface_Recon/Screens/Work/Rela_Look.Designer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Deepface_Recon/Screens/Work/Rela_Look.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Deepface_Recon/Screens/Work/SubMenus/DirCreate.Designer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Deepface_Recon/Screens/Work/SubMenus/DirCreate.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProblemsViewState">
@@ -71,10 +90,11 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
-    &quot;.NET Project.Deepface_Recon.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Project.Deepface_Recon.executor&quot;: &quot;Debug&quot;,
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;XThreadsFramesViewSplitterKey&quot;: &quot;0.32554516&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
@@ -153,7 +173,18 @@
       <workItem from="1763222732288" duration="1392000" />
       <workItem from="1763225401837" duration="14689000" />
       <workItem from="1763332692429" duration="2764000" />
-      <workItem from="1763801214635" duration="773000" />
+      <workItem from="1763801214635" duration="3981000" />
+      <workItem from="1763808488205" duration="487000" />
+      <workItem from="1763889635144" duration="18877000" />
+      <workItem from="1764037835946" duration="4232000" />
+      <workItem from="1764221729471" duration="16382000" />
+      <workItem from="1764309867670" duration="603000" />
+      <workItem from="1764368036807" duration="15005000" />
+      <workItem from="1764399532761" duration="13930000" />
+      <workItem from="1764453537787" duration="19155000" />
+      <workItem from="1764562319091" duration="6450000" />
+      <workItem from="1764577521715" duration="282000" />
+      <workItem from="1764624876340" duration="6556000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit">
       <option name="closed" value="true" />
@@ -195,7 +226,15 @@
       <option name="project" value="LOCAL" />
       <updated>1763162291671</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Save before big changes">
+      <option name="closed" value="true" />
+      <created>1763804641776</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1763804641776</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -210,7 +249,8 @@
     <MESSAGE value="Ask which user python should be installed" />
     <MESSAGE value="Importing all necessary data, Semi-finished HomeScreen." />
     <MESSAGE value="*Proper Time Frame of the images&#10;*Fixed Libraries (Lack of Pyhon-Docx)&#10;*Fixed Installation Process" />
-    <option name="LAST_COMMIT_MESSAGE" value="*Proper Time Frame of the images&#10;*Fixed Libraries (Lack of Pyhon-Docx)&#10;*Fixed Installation Process" />
+    <MESSAGE value="Save before big changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Save before big changes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

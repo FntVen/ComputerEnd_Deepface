@@ -2,9 +2,10 @@
 using Microsoft.AspNetCore.Mvc;
 using Deepface_Recon.ApiBase.Model;
 using Deepface_Recon.ApiBase.Functions;
+using Deepface_Recon.General_Fuctions;
 
 
-    [ApiController]
+[ApiController]
     [Route("deepface/[controller]")]
     public class Controller : ControllerBase
     {
@@ -29,6 +30,7 @@ using Deepface_Recon.ApiBase.Functions;
             var PassArgs = new CsvAppending();
             PassArgs.CsvArgWork(model.Session);
            
+            ConsoleWork.ConsoleFormating(model.Session, model.Device);
             
             return StatusCode(201);
         }

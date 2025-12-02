@@ -31,32 +31,19 @@ partial class MainMenu
     /// </summary>
     private void InitializeComponent()
     {
-        System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainMenu));
-        pictureBox1 = new System.Windows.Forms.PictureBox();
         pictureBox2 = new System.Windows.Forms.PictureBox();
         pictureBox3 = new System.Windows.Forms.PictureBox();
         Iniciar = new System.Windows.Forms.Button();
         label1 = new System.Windows.Forms.Label();
-        label2 = new System.Windows.Forms.Label();
         Ver_R = new System.Windows.Forms.Button();
         Criar_R = new System.Windows.Forms.Button();
-        Device = new System.Windows.Forms.Button();
         Entenda = new System.Windows.Forms.Button();
-        DeviceName = new System.Windows.Forms.RichTextBox();
         richTextBox1 = new System.Windows.Forms.RichTextBox();
-        ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+        UserConsole = new System.Windows.Forms.RichTextBox();
+        Databases = new System.Windows.Forms.Button();
         ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
         ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
         SuspendLayout();
-        // 
-        // pictureBox1
-        // 
-        pictureBox1.BackColor = System.Drawing.Color.White;
-        pictureBox1.Location = new System.Drawing.Point(15, 22);
-        pictureBox1.Name = "pictureBox1";
-        pictureBox1.Size = new System.Drawing.Size(546, 367);
-        pictureBox1.TabIndex = 0;
-        pictureBox1.TabStop = false;
         // 
         // pictureBox2
         // 
@@ -82,7 +69,7 @@ partial class MainMenu
         Iniciar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
         Iniciar.Font = new System.Drawing.Font("Bodoni MT Condensed", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)0));
         Iniciar.ForeColor = System.Drawing.SystemColors.ControlLight;
-        Iniciar.Location = new System.Drawing.Point(424, 399);
+        Iniciar.Location = new System.Drawing.Point(416, 399);
         Iniciar.Name = "Iniciar";
         Iniciar.Size = new System.Drawing.Size(137, 43);
         Iniciar.TabIndex = 3;
@@ -101,17 +88,6 @@ partial class MainMenu
         label1.TabIndex = 6;
         label1.Text = "Insira esse Link no aplicativo \r\nem seu dispositivo móvel";
         label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-        // 
-        // label2
-        // 
-        label2.BackColor = System.Drawing.Color.White;
-        label2.Font = new System.Drawing.Font("Bodoni MT Condensed", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)0));
-        label2.Location = new System.Drawing.Point(34, 24);
-        label2.Name = "label2";
-        label2.Size = new System.Drawing.Size(390, 34);
-        label2.TabIndex = 7;
-        label2.Text = "Dispositivos Registrados";
-        label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
         // 
         // Ver_R
         // 
@@ -137,18 +113,6 @@ partial class MainMenu
         Criar_R.UseVisualStyleBackColor = true;
         Criar_R.Click += Criar_R_Click;
         // 
-        // Device
-        // 
-        Device.BackgroundImage = ((System.Drawing.Image)resources.GetObject("Device.BackgroundImage"));
-        Device.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-        Device.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-        Device.ForeColor = System.Drawing.Color.Transparent;
-        Device.Location = new System.Drawing.Point(78, 72);
-        Device.Name = "Device";
-        Device.Size = new System.Drawing.Size(60, 97);
-        Device.TabIndex = 10;
-        Device.UseVisualStyleBackColor = true;
-        // 
         // Entenda
         // 
         Entenda.BackColor = System.Drawing.Color.FromArgb(((int)((byte)10)), ((int)((byte)29)), ((int)((byte)44)));
@@ -163,16 +127,6 @@ partial class MainMenu
         Entenda.UseVisualStyleBackColor = false;
         Entenda.Click += Entenda_Click;
         // 
-        // DeviceName
-        // 
-        DeviceName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-        DeviceName.Location = new System.Drawing.Point(37, 175);
-        DeviceName.Name = "DeviceName";
-        DeviceName.Size = new System.Drawing.Size(145, 30);
-        DeviceName.TabIndex = 12;
-        DeviceName.Text = "";
-        DeviceName.TextChanged += DeviceName_TextChanged;
-        // 
         // richTextBox1
         // 
         richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -186,45 +140,65 @@ partial class MainMenu
         richTextBox1.Text = "";
         richTextBox1.TextChanged += richTextBox1_TextChanged;
         // 
+        // UserConsole
+        // 
+        UserConsole.BackColor = System.Drawing.Color.White;
+        UserConsole.BorderStyle = System.Windows.Forms.BorderStyle.None;
+        UserConsole.Location = new System.Drawing.Point(25, 22);
+        UserConsole.Name = "UserConsole";
+        UserConsole.ReadOnly = true;
+        UserConsole.Size = new System.Drawing.Size(528, 367);
+        UserConsole.TabIndex = 14;
+        UserConsole.Text = "";
+        UserConsole.TextChanged += UserConsole_TextChanged;
+        // 
+        // Databases
+        // 
+        Databases.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+        Databases.Font = new System.Drawing.Font("Bodoni MT Condensed", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)0));
+        Databases.Location = new System.Drawing.Point(574, 244);
+        Databases.Name = "Databases";
+        Databases.Size = new System.Drawing.Size(214, 45);
+        Databases.TabIndex = 15;
+        Databases.Text = "Gerenciar Databases";
+        Databases.UseVisualStyleBackColor = true;
+        Databases.Click += Databases_Click;
+        // 
         // MainMenu
         // 
         AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
         AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
         BackColor = System.Drawing.Color.FromArgb(((int)((byte)205)), ((int)((byte)201)), ((int)((byte)198)));
         ClientSize = new System.Drawing.Size(800, 450);
+        Controls.Add(Databases);
+        Controls.Add(UserConsole);
         Controls.Add(richTextBox1);
-        Controls.Add(DeviceName);
         Controls.Add(Entenda);
-        Controls.Add(Device);
         Controls.Add(Criar_R);
         Controls.Add(Ver_R);
-        Controls.Add(label2);
         Controls.Add(label1);
         Controls.Add(Iniciar);
         Controls.Add(pictureBox3);
         Controls.Add(pictureBox2);
-        Controls.Add(pictureBox1);
+        FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
         MaximizeBox = false;
         Text = "MainMenu";
-        ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
         ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
         ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
         ResumeLayout(false);
     }
 
+    private System.Windows.Forms.Button Databases;
+
+    private System.Windows.Forms.RichTextBox UserConsole;
+
     private System.Windows.Forms.RichTextBox richTextBox1;
 
-    private System.Windows.Forms.RichTextBox DeviceName;
-
     private System.Windows.Forms.Button Entenda;
-
-    private System.Windows.Forms.Button Device;
 
     private System.Windows.Forms.Button Criar_R;
 
     private System.Windows.Forms.Button Ver_R;
-
-    private System.Windows.Forms.Label label2;
 
     private System.Windows.Forms.Label label1;
 
@@ -233,8 +207,6 @@ partial class MainMenu
     private System.Windows.Forms.PictureBox pictureBox3;
 
     private System.Windows.Forms.PictureBox pictureBox2;
-
-    private System.Windows.Forms.PictureBox pictureBox1;
 
     #endregion
 }
