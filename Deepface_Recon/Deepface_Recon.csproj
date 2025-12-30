@@ -1,0 +1,66 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>WinExe</OutputType>
+		<TargetFramework>net8.0-windows</TargetFramework>
+		<Nullable>enable</Nullable>
+		<UseWindowsForms>true</UseWindowsForms>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<AssemblyName>Aguia Eye</AssemblyName>
+		<RootNamespace>Aguia Eye</RootNamespace>
+		<ApplicationIcon>bin\Release\Resources\Relatórios\re\logore.ico</ApplicationIcon>
+		<SignAssembly>true</SignAssembly>
+		<AssemblyOriginatorKeyFile>LucianoFontedeSouzaFilho.snk</AssemblyOriginatorKeyFile>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <Folder Include="Assets\Images\" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Compile Update="Screens\Setup\Setup_Download.cs">
+	    <SubType>Form</SubType>
+	  </Compile>
+	  <Compile Update="Screens\Setup\AskUser.cs">
+	    <SubType>Form</SubType>
+	  </Compile>
+	  <Compile Update="Screens\Work\MainMenu.cs">
+	    <SubType>Form</SubType>
+	  </Compile>
+	  <Compile Update="Screens\Work\Rela_Look.cs">
+	    <SubType>Form</SubType>
+	  </Compile>
+	  <Compile Update="Screens\Work\Rela_Create.cs">
+	    <SubType>Form</SubType>
+	  </Compile>
+	  <Compile Update="Screens\Work\Database_Work.cs">
+	    <SubType>Form</SubType>
+	  </Compile>
+	  <Compile Update="Screens\Work\SubMenus\DirCreate.cs">
+	    <SubType>Form</SubType>
+	  </Compile>
+	  <Compile Update="Screens\Work\SubMenus\SelectImage.cs">
+	    <SubType>Form</SubType>
+	  </Compile>
+	  <Compile Update="Screens\Work\Explica.cs">
+	    <SubType>Form</SubType>
+	  </Compile>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <PackageReference Include="CsvHelper" Version="33.1.0" />
+	  <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.21" />
+	  <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.3.0" />
+	  <PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
+	  <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.10" />
+	  <PackageReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" Version="2.0.3" />
+	  <PackageReference Include="SixLabors.ImageSharp" Version="3.1.12" />
+	  <PackageReference Include="Swashbukle.AspNetCore" Version="2.0.0" />
+	  <PackageReference Include="System.Reflection.Emit" Version="4.7.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Include="bin\Release\Resources\Relatórios\re\logore.ico" />
+	</ItemGroup>
+
+</Project>
